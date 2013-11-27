@@ -1,0 +1,40 @@
+HTML
+---------------------
+<div id='wrap'>
+    <div id="clickable_div"><img src="http://www.nolimitcycling.net/Index%20Rollover.png" alt="Smiley face" width="60" height="60"></div>
+        <div id="nav_menu">
+            <ul>
+                <li id="l1">Contact</li>
+                <li>Gallery</li>
+                <li>Friends</li>
+                <li>Welcome</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+Javascript
+----------------------
+
+
+$('#clickable_div').mouseover( function(){
+    $('#nav_menu').slideDown();
+})
+$('#wrap').mouseleave( function(){
+    $('#nav_menu').slideUp();
+});
+
+
+CSS
+-----------------------
+
+#clickable_div {width:60px; height:60px; background-color:#000000;}
+*{margin:0; padding:0}
+#nav_menu{width:60px; height:auto; background-color:#D1DDED;display:none;border-style:solid;
+border-width:1px;
+border-color:#0072bc;
+}
+
+#wrap{ width:100px }
